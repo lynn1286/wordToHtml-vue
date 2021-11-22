@@ -1,0 +1,51 @@
+{
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "extends": [
+        "plugin:vue/vue3-recommended", // vue3 eslint
+        "eslint:recommended",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "vue/no-mutating-props": "off",
+        "vue/custom-event-name-casing": "off",
+        "no-use-before-define": "off",
+        "no-unused-vars": "off",
+        "no-undef": ["off"],
+        "space-before-function-paren": "off",
+        "vue/attributes-order": "off",
+        "vue/one-component-per-file": "off",
+        "vue/html-closing-bracket-newline": "off",
+        "vue/max-attributes-per-line": "off",
+        "vue/multiline-html-element-content-newline": "off",
+        "vue/singleline-html-element-content-newline": "off",
+        "vue/attribute-hyphenation": "off",
+        "vue/require-default-prop": "off",
+
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 100,
+                "singleQuote": true, // 使用单引号
+                "semi": false, // 末尾使用分号
+                "tabWidth": 4,
+                "trailingComma": "none",
+                "arrowParens": "avoid",
+                "bracketSpacing": true,
+                "htmlWhitespaceSensitivity": "ignore",
+                "proseWrap": "preserve", // 代码超出是否要换行 preserve保留
+                "vueIndentScriptAndStyle": false,
+                "quoteProps": "as-needed",
+                "jsxBracketSameLine": false,
+                "jsxSingleQuote": false,
+                "insertPragma": false,
+                "requirePragma": false,
+                "endOfLine": "crlf"
+            }
+        ]
+    }
+}
